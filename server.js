@@ -1,13 +1,11 @@
 const express = require("express");
 const app = express();
-const sendMessage = [
-	{
-		msg: "Welcome"
-	}
-];
-app.get("/", (req, res) => res.json(sendMessage));
-// Define Routes
+const connectDB = require("./config/db");
 
+// Connect Database
+connectDB();
+
+// Define Routes
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/contacts", require("./routes/contacts"));
