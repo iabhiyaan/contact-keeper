@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://iabhiyaan:CLF666DIII@contact-keeper-rmdjn.mongodb.net/test?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://iabhiyaan:CLF666DIII@contact-keeper-rmdjn.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
